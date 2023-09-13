@@ -1,0 +1,16 @@
+{
+  "name": "Exir Noavaran",
+  "version": "1",
+  "manifest_version": 3,
+  "description": "This extention add Noavaran Amin Technical Chart to Exir Rayan Hamafza",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://aminbc.exirbroker.com/exir/mainNew"],
+      "js": ["index.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
